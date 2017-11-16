@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../Gesture_ImageView/Gesture_ImageView.iml" filepath="$PROJECT_DIR$/../Gesture_ImageView/Gesture_ImageView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../WXLikeVideoRecorderLib/WXLikeVideoRecorderLib.iml" filepath="$PROJECT_DIR$/../WXLikeVideoRecorderLib/WXLikeVideoRecorderLib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../app/app.iml" filepath="$PROJECT_DIR$/../app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/magicindicator.iml" filepath="$PROJECT_DIR$/magicindicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nnhgj.iml" filepath="$PROJECT_DIR$/../nnhgj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../nnhgjgreendao/nnhgjgreendao.iml" filepath="$PROJECT_DIR$/../nnhgjgreendao/nnhgjgreendao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../pickerview/pickerview.iml" filepath="$PROJECT_DIR$/../pickerview/pickerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../swipelist/swipelist.iml" filepath="$PROJECT_DIR$/../swipelist/swipelist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../xrecyclerview/xrecyclerview.iml" filepath="$PROJECT_DIR$/../xrecyclerview/xrecyclerview.iml" />
+    </modules>
+  </component>
+</project>

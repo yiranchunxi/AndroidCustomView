@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+
+
+    <views.CustomVolumControlBar
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:circleWidth="10dp"
+        app:firstColor="@color/colorPrimary"
+        app:secondColor="@android:color/white"
+        app:bg="@mipmap/fragment_user_index_icon_notice"
+        app:splitSize="15"
+        app:dotCount="20"
+        />
+</LinearLayout>

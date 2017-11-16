@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>html</title>
+    <script>
+       function showFromHtml(){
+          alert("Android调用了JS的callJS方法");
+       }
+
+       function showFromHtmlWithPara(a){
+         return a;
+       }
+
+        function callAndroid(){
+        // 由于对象映射，所以调用test对象等于调用Android映射的对象
+          // var str=window.jsObj.HtmlcallJava();
+         //  alert(str);
+            window.jsObj.ToActivity("test para");
+         }
+</script>
+
+</head>
+      dasdsdadasdasdadsdasdsdadas
+
+        <button type="button" id="button1" onclick="callAndroid()">点击调用Android代码</button>
+</html>

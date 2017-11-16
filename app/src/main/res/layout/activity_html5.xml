@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Button
+        android:id="@+id/buttonjs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="calljsjs"/>
+    <ProgressBar
+        android:layout_below="@id/buttonjs"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="5px"
+        android:progressDrawable="@drawable/progressbar1"
+        android:layout_alignParentTop="true"
+        />
+    <LinearLayout
+        android:id="@+id/ll_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/progressBar"
+        >
+    </LinearLayout>
+</RelativeLayout>
