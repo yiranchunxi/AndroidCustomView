@@ -24,6 +24,7 @@ import java.util.List;
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import custom.study.com.fragment.CustomFragment10;
+import custom.study.com.fragment.CustomFragment11;
 import custom.study.com.fragment.CustomFragment4;
 
 /**
@@ -39,16 +40,17 @@ public class PaintActivity extends FragmentActivity {
     @Nullable
     @Bind(R.id.magic_indicator)
     MagicIndicator magic_indicator;
-    private static final String[] CHANNELS = new String[1];
+    private static final String[] CHANNELS = new String[2];
     List<Fragment> fragmentContainter = new ArrayList<Fragment>();
     private CustomFragment10 fg=new CustomFragment10();
+    private CustomFragment11 fg1=new CustomFragment11();
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_paint);
 
         CHANNELS[0] = "LinearGradientView";
-       // CHANNELS[1]="DrawCircleView";
+        CHANNELS[1]="RadialGradientView";
        // CHANNELS[2]="DrawRectView";
        // CHANNELS[3]="DrawPointView";
        // CHANNELS[4]="DrawOvalView";
@@ -65,7 +67,7 @@ public class PaintActivity extends FragmentActivity {
 
     public void initViewPager() {
         fragmentContainter.add(fg);
-       // fragmentContainter.add(fg1);
+        fragmentContainter.add(fg1);
         //fragmentContainter.add(fg2);
        // fragmentContainter.add(fg3);
        // fragmentContainter.add(fg4);

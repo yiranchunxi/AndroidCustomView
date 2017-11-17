@@ -44,16 +44,16 @@ public class Practice01LinearGradientView extends View {
         paint.reset();
 
         if(type==1){
-            shader=new LinearGradient(100,100,300,300, Color.parseColor("#E91E63"),Color.parseColor("#2196F3"),Shader.TileMode.CLAMP);
+            shader=new LinearGradient(100,100,150,150, Color.parseColor("#E91E63"),Color.parseColor("#2196F3"),Shader.TileMode.CLAMP);
         }else if(type==2){
-            shader=new LinearGradient(100,100,300,300, Color.parseColor("#E91E63"),Color.parseColor("#2196F3"),Shader.TileMode.MIRROR);
+            shader=new LinearGradient(100,100,150,150, Color.parseColor("#E91E63"),Color.parseColor("#2196F3"),Shader.TileMode.MIRROR);
         }else if(type==3) {
-            shader = new LinearGradient(100, 100, 300, 300, Color.parseColor("#E91E63"), Color.parseColor("#2196F3"), Shader.TileMode.REPEAT);
+            shader = new LinearGradient(100, 100, 150, 150, Color.parseColor("#E91E63"), Color.parseColor("#2196F3"), Shader.TileMode.REPEAT);
         }
 
         paint.setShader(shader);
        // canvas.drawCircle(300,300,200,paint);
-        canvas.drawRect(100,100,600,600,paint);
+        canvas.drawRect(100,100,300,300,paint);
     }
 
     public void setType(int type) {
