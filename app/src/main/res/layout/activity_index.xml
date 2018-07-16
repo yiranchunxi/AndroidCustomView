@@ -3,7 +3,9 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal">
+    android:gravity="center_horizontal"
+    android:background="@color/colorPrimaryRed">
+
 
     <Button
         android:id="@+id/btn_drawxxx"
@@ -18,5 +20,42 @@
         android:layout_width="300dp"
         android:layout_height="50dp"
         android:text="Paint"
+        android:layout_marginTop="25dp"/>
+
+
+    <Button
+        android:id="@+id/btn_text"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Text"
+        android:layout_marginTop="25dp"/>
+
+
+    <Button
+        android:id="@+id/btn_matrix"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Matrix"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/btn_draw"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Draw"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/btn_animate"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Animate"
+        android:layout_marginTop="25dp"/>
+
+    <Button
+        android:id="@+id/btn_views"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:text="Views"
         android:layout_marginTop="25dp"/>
 </LinearLayout>

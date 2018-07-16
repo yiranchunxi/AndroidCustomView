@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <Button
+        android:id="@+id/btn_test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="backkkkk"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="@color/color262626"
+        android:layout_marginTop="94dp"
+        android:layout_marginLeft="40dp"
+        android:text="请输入验证码"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="验证码已发送至  (+86) 18612345678"
+        android:textSize="14sp"
+        android:textColor="@color/color505050"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="40dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30s 后可重新发送"
+        android:textSize="14sp"
+        android:textColor="@color/color505050"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="40dp"/>
+
+
+    <views.verifycodeview.VerifyCodeView
+        android:id="@+id/verify_code_view"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="30dp"
+        >
+
+    </views.verifycodeview.VerifyCodeView>
+
+
+</LinearLayout>

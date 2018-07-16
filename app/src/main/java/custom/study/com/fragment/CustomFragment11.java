@@ -14,7 +14,10 @@ import custom.study.com.R;
 public class CustomFragment11 extends BaseFragment {
 
 
-  //  @Nullable @Bind(R.id.radialGradientView) custom.study.com.paint.Practice01LinearGradientView radialGradientView;
+
+
+
+
     @Override
     protected View setView() {
         return View.inflate(getActivity(), R.layout.fragment_customview11, null);

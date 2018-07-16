@@ -26,6 +26,7 @@ import butterknife.ButterKnife;
 import custom.study.com.fragment.CustomFragment10;
 import custom.study.com.fragment.CustomFragment11;
 import custom.study.com.fragment.CustomFragment4;
+import custom.study.com.fragment.PageFragment;
 
 /**
  * Created by Administrator on 2017/7/28.
@@ -40,7 +41,7 @@ public class PaintActivity extends FragmentActivity {
     @Nullable
     @Bind(R.id.magic_indicator)
     MagicIndicator magic_indicator;
-    private static final String[] CHANNELS = new String[2];
+    private static final String[] CHANNELS = new String[14];
     List<Fragment> fragmentContainter = new ArrayList<Fragment>();
     private CustomFragment10 fg=new CustomFragment10();
     private CustomFragment11 fg1=new CustomFragment11();
@@ -51,15 +52,18 @@ public class PaintActivity extends FragmentActivity {
 
         CHANNELS[0] = "LinearGradientView";
         CHANNELS[1]="RadialGradientView";
-       // CHANNELS[2]="DrawRectView";
-       // CHANNELS[3]="DrawPointView";
-       // CHANNELS[4]="DrawOvalView";
-       // CHANNELS[5]="DrawLineView";
-       // CHANNELS[6]="DrawArcView";
-        //CHANNELS[7]="DrawPathView";
-        //CHANNELS[8]="HistogramView";
-       // CHANNELS[9]="PieChartView";
-
+        CHANNELS[2]="BitmapShaderView";
+        CHANNELS[3]="ComposerShaderView";
+        CHANNELS[4]="ColorFilterView";
+        CHANNELS[5]="ColorMatrixColorfilterView";
+        CHANNELS[6]="XfermodeView";
+        CHANNELS[7]="StrokeCapView";
+        CHANNELS[8]="StrokeJoinView";
+        CHANNELS[9]="pathEffect";
+        CHANNELS[10]="ShadowLayerView";
+        CHANNELS[11]="MaskFilterView";
+        CHANNELS[12]="FillPathView";
+        CHANNELS[12]="TextPathView";
         ButterKnife.bind(this);
         initViewPager();
         initMagicIndicator();
@@ -68,14 +72,18 @@ public class PaintActivity extends FragmentActivity {
     public void initViewPager() {
         fragmentContainter.add(fg);
         fragmentContainter.add(fg1);
-        //fragmentContainter.add(fg2);
-       // fragmentContainter.add(fg3);
-       // fragmentContainter.add(fg4);
-        //fragmentContainter.add(fg5);
-       // fragmentContainter.add(fg6);
-       // fragmentContainter.add(fg7);
-       // fragmentContainter.add(fg8);
-       // fragmentContainter.add(fg9);
+        fragmentContainter.add(PageFragment.newInstance(R.layout.bitmap_shader_view));
+        fragmentContainter.add(PageFragment.newInstance(R.layout.compost_shader_view));
+        fragmentContainter.add(PageFragment.newInstance(R.layout.color_filter_view));
+        fragmentContainter.add(PageFragment.newInstance(R.layout.color_matrix_view));
+        fragmentContainter.add(PageFragment.newInstance(R.layout.xfermode_view));
+        fragmentContainter.add(PageFragment.newInstance(R.layout.stroke_cap_view));
+        fragmentContainter.add(PageFragment.newInstance(R.layout.stroke_join_view));
+        fragmentContainter.add(PageFragment.newInstance(R.layout.path_effect_view));
+        fragmentContainter.add(PageFragment.newInstance(R.layout.shadow_layer_view));
+        fragmentContainter.add(PageFragment.newInstance(R.layout.mask_filter_view));
+        fragmentContainter.add(PageFragment.newInstance(R.layout.fill_path_view));
+        fragmentContainter.add(PageFragment.newInstance(R.layout.text_path_view));
         viewPager.setAdapter(new android.support.v4.app.FragmentPagerAdapter(getSupportFragmentManager()) {
             @Override
             public android.support.v4.app.Fragment getItem(int position) {

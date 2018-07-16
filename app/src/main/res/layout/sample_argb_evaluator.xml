@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<custom.study.com.animate.Sample01ArgbEvaluatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B2B2B"
+    android:orientation="vertical">
+
+    <custom.study.com.animate.Sample01ArgbEvaluatorView
+        android:id="@+id/objectAnimatorView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+
+    <custom.study.com.animate.Sample01ArgbEvaluatorView
+        android:id="@+id/hsvobjectAnimatorView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+
+    <Button
+        android:id="@+id/animateBt"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        android:text="animate"/>
+
+</custom.study.com.animate.Sample01ArgbEvaluatorLayout>

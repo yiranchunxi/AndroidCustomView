@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<views.pierrebezier.MagicCircleLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2B2B2B"
+    android:orientation="vertical">
+
+   <views.pierrebezier.MagicCircleN
+       android:id="@+id/magic_circlen"
+       android:layout_width="match_parent"
+       android:layout_height="400dp"
+       android:layout_alignParentTop="true"
+       />
+
+    <Button
+        android:id="@+id/animateBt"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_margin="8dp"
+        android:textSize="16sp"
+        android:text="animate"
+        android:layout_alignParentBottom="true"/>
+
+</views.pierrebezier.MagicCircleLayout>

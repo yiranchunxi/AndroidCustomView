@@ -7,9 +7,6 @@ import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.amap.api.maps.AMap;
-import com.amap.api.maps.TextureMapView;
-import com.baidu.mapapi.map.BaiduMap;
 
 import views.VDHLayout;
 import widget.MapContainer;
@@ -19,9 +16,7 @@ import widget.MapContainer;
  */
 
 public class VDHActivity extends Activity {
-    private com.baidu.mapapi.map.TextureMapView mapView;
-    private AMap aMap;
-    private BaiduMap mBaiduMap;
+
     private MapContainer map_container;
     private LinearLayout ll_a;
     private VDHLayout vdhl_container;
@@ -60,9 +55,7 @@ public class VDHActivity extends Activity {
     @Override
     protected void onPause() {
         super.onPause();
-        if(mapView!=null){
-            mapView.onPause();
-        }
+
     }
 
     /**
@@ -71,9 +64,7 @@ public class VDHActivity extends Activity {
     @Override
     protected void onResume() {
         super.onResume();
-        if(mapView!=null){
-            mapView.onResume();
-        }
+
     }
 
     /**
@@ -82,19 +73,13 @@ public class VDHActivity extends Activity {
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
-        if(mapView!=null){
-            mapView.onSaveInstanceState(outState);
-        }
 
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        if(mapView!=null){
 
-            mapView.onDestroy();
-        }
 
     }
 }

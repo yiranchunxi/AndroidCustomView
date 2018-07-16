@@ -2,8 +2,6 @@ package custom.study.com;
 
 import android.app.Application;
 
-import com.baidu.mapapi.CoordType;
-import com.baidu.mapapi.SDKInitializer;
 
 import widget.CrashHandler;
 

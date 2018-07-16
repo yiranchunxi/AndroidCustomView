@@ -1,0 +1,57 @@
+package custom.study.com.animate;
+
+import android.animation.ObjectAnimator;
+import android.content.Context;
+import android.support.v4.view.animation.FastOutSlowInInterpolator;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.Button;
+import android.widget.RelativeLayout;
+
+import custom.study.com.R;
+
+/**
+ * Created by Administrator on 2018/6/20.
+ */
+
+public class Sample08ObjectAnimatorLayout extends RelativeLayout {
+
+    Sample08ObjectAnimatorView view;
+
+    Button animateBt;
+
+
+    public Sample08ObjectAnimatorLayout(Context context) {
+        super(context);
+    }
+
+    public Sample08ObjectAnimatorLayout(Context context, AttributeSet attrs) {
+        super(context, attrs);
+    }
+
+    public Sample08ObjectAnimatorLayout(Context context, AttributeSet attrs, int defStyleAttr) {
+        super(context, attrs, defStyleAttr);
+    }
+
+
+    @Override
+    protected void onAttachedToWindow() {
+        super.onAttachedToWindow();
+
+        view=findViewById(R.id.objectAnimatorView);
+        animateBt=findViewById(R.id.animateBt);
+
+        animateBt.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ObjectAnimator objectAnimator=ObjectAnimator.ofFloat(view,"progress",0,65);
+
+                objectAnimator.setDuration(1000);
+
+                objectAnimator.setInterpolator(new FastOutSlowInInterpolator());
+
+                objectAnimator.start();
+            }
+        });
+    }
+}

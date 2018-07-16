@@ -33,14 +33,14 @@ public class Practice02RadialGradientView extends View {
         super(context, attrs, defStyleAttr);
     }
     {
-        Log.e("test",getWidth()/2+"===="+getHeight()/2);
-        paint.setShader(new RadialGradient(getWidth()/2,300,200,Color.parseColor("#E91E63"),
-                Color.parseColor("#2196F3"),Shader.TileMode.CLAMP));
+
+        paint.setShader(new RadialGradient(300, 300, 200, Color.parseColor("#E91E63"),
+                Color.parseColor("#2196F3"), Shader.TileMode.CLAMP));
     }
     @Override
     protected void onDraw(Canvas canvas) {
         super.onDraw(canvas);
-        canvas.drawCircle(getWidth()/2,getHeight()/2,200,paint);
+        canvas.drawCircle(300, 300, 200, paint);
     }
 
 

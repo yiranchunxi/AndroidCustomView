@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/CustomView.iml" filepath="$PROJECT_DIR$/CustomView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/AndroidCustomView.iml" filepath="$PROJECT_DIR$/AndroidCustomView.iml" />
+      <module fileurl="file://E:\demo\AndroidCustomView\CustomView.iml" filepath="E:\demo\AndroidCustomView\CustomView.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/magicindicator/magicindicator.iml" filepath="$PROJECT_DIR$/magicindicator/magicindicator.iml" />
     </modules>
