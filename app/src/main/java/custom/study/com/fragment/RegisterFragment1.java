@@ -36,7 +36,7 @@ public class RegisterFragment1 extends Fragment {
     }
 
     public RegisterFragment1() {
-        // Required empty public constructor
+
     }
 
     @Override
